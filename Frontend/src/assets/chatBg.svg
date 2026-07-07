@@ -1,0 +1,105 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)" />
+
+  <!-- Top Left Glow -->
+  <circle cx="100" cy="100" r="180"
+          fill="#2563EB"
+          opacity="0.15"
+          filter="url(#glow)"/>
+
+  <!-- Bottom Right Glow -->
+  <circle cx="1820" cy="980" r="220"
+          fill="#8B5CF6"
+          opacity="0.18"
+          filter="url(#glow)"/>
+
+  <!-- Hex Pattern Left -->
+  <g opacity="0.15" stroke="#3B82F6">
+    <polygon points="80,300 100,265 140,265 160,300 140,335 100,335"/>
+    <polygon points="160,300 180,265 220,265 240,300 220,335 180,335"/>
+    <polygon points="120,365 140,330 180,330 200,365 180,400 140,400"/>
+  </g>
+
+  <!-- Hex Pattern Right -->
+  <g opacity="0.15" stroke="#8B5CF6">
+    <polygon points="1700,350 1720,315 1760,315 1780,350 1760,385 1720,385"/>
+    <polygon points="1780,350 1800,315 1840,315 1860,350 1840,385 1800,385"/>
+    <polygon points="1740,415 1760,380 1800,380 1820,415 1800,450 1760,450"/>
+  </g>
+
+  <!-- Chat Bubble -->
+  <g transform="translate(90,120)">
+    <rect x="0" y="0" width="180" height="120"
+          rx="30"
+          stroke="url(#accent)"
+          stroke-width="3"/>
+
+    <path d="M50 120 L75 145 L75 120"
+          stroke="url(#accent)"
+          stroke-width="3"/>
+
+    <circle cx="65" cy="60" r="8" fill="#8B5CF6"/>
+    <circle cx="90" cy="60" r="8" fill="#6366F1"/>
+    <circle cx="115" cy="60" r="8" fill="#3B82F6"/>
+  </g>
+
+  <!-- Chat Bubble Right -->
+  <g transform="translate(1540,760)">
+    <rect width="180" height="120"
+          rx="30"
+          stroke="url(#accent)"
+          stroke-width="3"/>
+
+    <path d="M120 120 L145 145 L145 120"
+          stroke="url(#accent)"
+          stroke-width="3"/>
+
+    <circle cx="65" cy="60" r="8" fill="#8B5CF6"/>
+    <circle cx="90" cy="60" r="8" fill="#6366F1"/>
+    <circle cx="115" cy="60" r="8" fill="#3B82F6"/>
+  </g>
+
+  <!-- Circuit Lines Bottom -->
+  <g opacity="0.3"
+     stroke="#3B82F6"
+     stroke-width="2">
+
+    <path d="M300 850 H500 L550 800 H700"/>
+    <path d="M350 900 H600 L650 850 H900"/>
+    <path d="M400 950 H700 L760 890 H1000"/>
+
+    <circle cx="700" cy="850" r="6" fill="#3B82F6"/>
+    <circle cx="900" cy="900" r="6" fill="#3B82F6"/>
+    <circle cx="1000" cy="950" r="6" fill="#3B82F6"/>
+  </g>
+
+  <!-- Decorative Dots -->
+  <g opacity="0.25" fill="#8B5CF6">
+    <circle cx="340" cy="100" r="3"/>
+    <circle cx="380" cy="100" r="3"/>
+    <circle cx="420" cy="100" r="3"/>
+
+    <circle cx="1500" cy="900" r="3"/>
+    <circle cx="1540" cy="900" r="3"/>
+    <circle cx="1580" cy="900" r="3"/>
+  </g>
+
+</svg>
